@@ -1,0 +1,7 @@
+www:
+  image: nginx
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - ./web/www:/usr/share/nginx/html:ro
